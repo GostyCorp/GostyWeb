@@ -1,0 +1,30 @@
+.mb-3, .list-group-item, .card
+{
+	background-color: rgba(100, 100, 100, 0.3) !important;
+	color : rgba(255, 255, 255, 1) !important;
+}
+
+.text-muted
+{
+	color : rgba(255, 255, 255, 0.7) !important;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-color: white;
+	color : #54aabf;
+}
+
+body
+{
+	font-family: "Twlg Mono";
+	background-color: #1d1d1d !important;
+}
+
+a, label
+{
+	font-size: 18px;
+	color : rgb(8, 152, 0) ;
+}
