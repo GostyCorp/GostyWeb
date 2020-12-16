@@ -5,7 +5,7 @@
             <h5 class="card-title">Développeur</h5>
             <h6 class="card-subtitle text-muted">Développement et conception de logiciel informatique</h6>
         </div>
-        <img style="height: 200px; width: 100%; display: block;" src="" alt="Card image">
+        <img style="height: 200px; width: 300px; display: block;" src="../img/NewCat.jpg" alt="Card image">
         <div class="card-body">
             <p class="card-text">19 ans, en BTS SIO option SLAM</p>
         </div>
