@@ -40,7 +40,7 @@
                 lolyWeb est un site web personnel pour partager mes créations, mes tests, et me servant de portfolio.
             </p>
             <p>
-                Code Source : <a href="#" target="_blank" style="text-decoration: line-through !important;">Github</a><br>
+                Code Source : <a href="https://github.com/pApY-Dalix/lolyWeb" target="_blank" style="text-decoration: line-through !important;">Github</a><br>
                 Développé par Very Old pApY.<br>
                 Code : HTML - CSS - PHP - JS.
             </p>
@@ -60,7 +60,7 @@
                 Un simple application du jeu morpion, avec deux modes : joueur VS joueur et joueur VS IA.
             </p>
             <p>
-                Code Source : <a href="" target="_blank" style="text-decoration: line-through !important;">Github</a><br>
+                Code Source : <a href="https://github.com/pApY-Dalix/Morpion" target="_blank" style="text-decoration: line-through !important;">Github</a><br>
                 Développé par Very Old pApY.<br>
                 Code : C#
             </p>

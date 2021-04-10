@@ -9,7 +9,7 @@
 			lolyWeb
 		</title>
 	</head>
-	<body onload="SwapDiv('project')">
+	<body onload="SwapDiv('home')">
 		<div class="header">
 			<img class="logo" src=img/NewCat.jpg>
 			<div class="navig">
@@ -22,6 +22,9 @@
 							<a href="#" onclick="SwapDiv('presentation')">>À Propos</a>
 						</li>
 						<li>
+							<a href="#" onclick="SwapDiv('veille')">>Veille</a>
+						</li>
+						<li>
 							<a href="#" onclick="SwapDiv('project')">>Projet</a>
 						</li>
 						<li>
@@ -32,10 +35,8 @@
 			</div>
 		</div>
 		<main class="page">
-			<div class="top">
-				<div class="titre">
-					<h1>ĽøĺýĆòřᵱ</h1>
-				</div>
+			<div class="titre">
+				<h1>ĽøĺýĆòřᵱ</h1>
 			</div>
 			<div class="content">
 				<div class="home">
@@ -46,6 +47,11 @@
 				<div class="presentation">
 					<?php
 						include("page/presentation.php");
+					?>
+				</div>
+				<div class="veille">
+					<?php
+						include("page/veille.php");
 					?>
 				</div>
 				<div class="project">

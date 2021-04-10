@@ -5,28 +5,26 @@ body
     background-color: black;
     color: #00fc1d;
     font-family: Consolas;
-    font-size: 0.8vw;
+    font-size: 1.5vh;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 1000px)
 {
-    body
-    {
-        font-size: 1.5vw;
-    }
+
 }
 
 .header
 {
     position: fixed;
     height: max-content;
-    width: 11vw;
+    width: 15vh;
 }
 
 .logo
 {
-    width: 11vw;
-    height: 11vw;
+    width: 15vh;
+    height: 15vh;
     border-radius: 1vw;
 }
 
@@ -38,12 +36,12 @@ body
     border-right: 0.1vw solid #00fc1d;
     border-top-right-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    height: 79.4vh;
+    height: 84.5vh;
 }
 
 .navig ul
 {
-    width: 11vw;
+    width: 15vh;
     margin: 0vw;
     padding: 0vw;
     border-bottom: 0.3vw double #00fc1d;
@@ -65,7 +63,7 @@ body
 
 .page
 {
-    margin-left: 11vw;
+    margin-left: 15vh;
     height: 100vh;
 }
 
@@ -80,19 +78,14 @@ main a:hover
     color: white;
 }
 
-.top
-{
-    position: static;
-    width: max-content;
-    height: 7vh;
-}
-
 .titre
 {
-    position: fixed;
-    width: 89vw;
-    border-bottom: 1vh solid #00fc1d;
-    border-radius: 100%;
+    position: static;
+    width: 100%;
+    height: 6vh;
+    padding-top: 1vh;
+    border-bottom: 0.5vh solid #00fc1d;
+    border-radius: 100vw;
 }
 
 .titre h1
@@ -100,15 +93,15 @@ main a:hover
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    border: 0.1vw solid #00fc1d;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 0.1vh solid #00fc1d;
     text-align: center;
 }
 
 .content
 {
-    height: 91vh;
+    height: 91.3vh;
     margin: 0vw;
     padding: 0vw;
     margin-top: 1vw;
@@ -161,7 +154,7 @@ main a:hover
 
 .presentation
 {
-    padding: 1vw;
+    margin: 2vh;
 }
 
 .presentation a
@@ -171,15 +164,12 @@ main a:hover
 
 .presentation p
 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     width: max-content;
 }
 
 .cv
 {
-    margin-left: 41vw;
+    margin-left: 2vh;
     text-align: center;
     padding-right: 1vw;
     padding-left: 1vw;
@@ -187,29 +177,36 @@ main a:hover
     border-radius: 1vw;
 }
 
+.veille
+{
+    display: none;
+    margin: 2vh;
+}
+
 .project
 {
-    margin: 1vw;
+    margin: 2vh;
 }
 
 .littleproject
 {
     position: sticky;
     height: max-content;
-    padding-bottom: 2vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .terrafunder
 {
-    height: 20vw;
+    height: 30vh;
 }
 .lolyweb
 {
-    height: 20vw;
+    height: 30vh;
 }
 .morpion
 {
-    height: 20vw;
+    height: 30vh;
 }
 
 .imagelt 
