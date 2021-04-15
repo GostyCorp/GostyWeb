@@ -30,6 +30,9 @@
 						<li>
 							<a href="#" onclick="SwapDiv('backup')">>Backup</a>
 						</li>
+						<li>
+							<a href="../lolyAdmin/index.php">Admin</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
