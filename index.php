@@ -31,7 +31,7 @@
 							<a href="#" onclick="SwapDiv('backup')">>Backup</a>
 						</li>
 						<li>
-							<a href="../lolyAdmin/index.php">Admin</a>
+							<a href="http://loly.ovh:8080">AdminBoard</a>
 						</li>
 					</ul>
 				</nav>
