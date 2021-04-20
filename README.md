@@ -1,2 +1,2 @@
 # lolyWeb
-WebSite lolyCorp
+WebSite lolyCorp : http:loly.ovh
