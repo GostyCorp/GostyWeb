@@ -1,0 +1,274 @@
+body
+{
+    margin: 0vw;
+    padding: 0vw;
+    background-color: black;
+    color: #00fc1d;
+    font-family: Consolas;
+    font-size: 1.5vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px)
+{
+
+}
+
+.header
+{
+    position: fixed;
+    height: max-content;
+    width: 15vh;
+}
+
+.logo
+{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 1vw;
+}
+
+.navig
+{
+    margin: 0vh;
+    padding: 0vw;
+    border-top: 0.1vw solid #00fc1d;
+    border-right: 0.1vw solid #00fc1d;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    height: 84.5vh;
+    width: 14.9vh;
+}
+
+.navig ul
+{
+    margin: 0vw;
+    padding: 0vw;
+    border-bottom: 0.3vw double #00fc1d;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navig p
+{
+    text-align: center;
+}
+
+.navig a
+{
+    text-decoration: none;
+    margin-right: auto;
+    color: #00fc1d;
+}
+
+.navig a::after
+{
+    content: '<';
+}
+
+.page
+{
+    margin-left: 15vh;
+    height: 100vh;
+}
+
+main a
+{
+    text-decoration: none;
+    color: #b381c7;
+}
+
+main a:hover
+{
+    color: white;
+}
+
+.titre
+{
+    position: static;
+    width: 100%;
+    height: 6vh;
+    padding-top: 1vh;
+    border-bottom: 0.5vh solid #00fc1d;
+    border-radius: 100vw;
+}
+
+.titre h1
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 0.1vh solid #00fc1d;
+    text-align: center;
+}
+
+.content
+{
+    height: 91.5vh;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: 1vh;
+    border-left: 0.1vw solid #00fc1d;
+    border-right: 0.1vw solid #00fc1d;
+    border-radius: 1vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.canvas
+{
+    position: fixed;
+    width: 147vh;
+    height: 91.5vh;
+    padding: 0;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    margin: 0;
+    border-right: 0.1vw solid #00fc1d;
+    border-radius: 1vw;
+}
+
+.slide
+{
+    position: fixed;
+    float: right;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-left: 0.1vw solid #00fc1d;
+    border-radius: 1vw;
+    margin-left: 149.1vh;
+    height: 91.5vh;
+    width: 10vh;
+    text-align: center;
+    width: max-content;
+}
+
+.fab 
+{
+    font-size: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.fas 
+{
+    font-size: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 0vw;
+}
+
+.presentation
+{
+    margin: 2vh;
+}
+
+.presentation a
+{
+    text-align: center;
+}
+
+.presentation p
+{
+    width: max-content;
+}
+
+.cv
+{
+    margin-left: 2vh;
+    text-align: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    border: 0.2vw solid #00fc1d;
+    border-radius: 1vw;
+}
+
+.veille
+{
+    display: none;
+    margin: 2vh;
+}
+
+.project
+{
+    margin: 2vh;
+}
+
+.littleproject
+{
+    position: sticky;
+    height: max-content;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.terrafunder
+{
+    height: 30vh;
+}
+.lolyweb
+{
+    height: 30vh;
+}
+.morpion
+{
+    height: 30vh;
+}
+
+.imagelt 
+{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+}
+
+.imagelt img
+{
+    padding: 1vw;
+    width: 18vw;
+    height: 18vw;
+}
+
+.imagert
+{
+    position: absolute;
+    width: 20vw;
+    margin-left: 68vw;
+}
+
+.imagert img
+{
+    padding-top: 2vw;
+    padding-left: 2vw;
+    width: 15vw;
+}
+
+.textrt 
+{
+    position: absolute;
+    margin: 0vw;
+    margin-left: 20vw;
+    width: 68vw;
+    height: 20vw;
+}
+
+.textlt
+{
+    position: absolute;
+    margin: 0vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    width: 68vw;
+}
+
+.name
+{
+    font-size: 1.2vw;
+}
+
+.backup ul
+{
+    margin-left: 5vw;
+    list-style-type: '¯\005C_(ツ)_/¯ >';
+}
