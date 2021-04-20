@@ -30,9 +30,6 @@
 						<li>
 							<a href="#" onclick="SwapDiv('backup')">>Backup</a>
 						</li>
-						<li>
-							<a href="http://loly.ovh:8080">>Admin</a>
-						</li>
 					</ul>
 				</nav>
 				<p><?php
