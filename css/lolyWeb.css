@@ -272,3 +272,8 @@ main a:hover
     margin-left: 5vw;
     list-style-type: '¯\005C_(ツ)_/¯ >';
 }
+
+.backup ul::after
+{
+    content: '< ¯\005C_(ツ)_/¯';
+}
