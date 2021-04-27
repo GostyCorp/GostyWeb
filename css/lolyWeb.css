@@ -273,7 +273,7 @@ main a:hover
     list-style-type: '¯\005C_(ツ)_/¯ >';
 }
 
-.backup ul::after
+.backup li::after
 {
     content: '< ¯\005C_(ツ)_/¯';
 }
