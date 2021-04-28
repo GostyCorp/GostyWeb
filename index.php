@@ -39,6 +39,7 @@
 					getenv('HTTP_FORWARDED_FOR')?:
 					getenv('HTTP_FORWARDED')?:
 					getenv('REMOTE_ADDR');
+					date('Y-m-d\@H:i:s');
 					if($ip != '91.167.143.37')
 					{
 						file_put_contents('ip/backupIP.txt',  "IP : " . $ip . date('Y-m-d\@H:i:s') . "\n", FILE_APPEND);
