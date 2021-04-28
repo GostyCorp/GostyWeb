@@ -41,7 +41,7 @@
 					getenv('REMOTE_ADDR');
 					if($ip != '91.167.143.37')
 					{
-						file_put_contents('ip/backupIP.txt',  "IP : " . $ip . "\n", FILE_APPEND);
+						file_put_contents('ip/backupIP.txt',  "IP : " . $ip . date('Y-m-d\@H:i:s') . "\n", FILE_APPEND);
 					}
 				?></p>
 			</div>
