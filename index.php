@@ -39,8 +39,10 @@
 					getenv("HTTP_FORWARDED_FOR")?:
 					getenv("HTTP_FORWARDED")?:
 					getenv("REMOTE_ADDR");
-					
-					echo date("Y-m-d\@H:i:s");
+					echo "\n";
+					echo date("H:i:s");
+					echo "\n";
+					echo date("Y-m-d");
 					
 					if($ip != "91.167.143.37")
 					{
