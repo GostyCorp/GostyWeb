@@ -46,9 +46,11 @@
 						}
 					?>
 				</p>
+				<p>
 					<?php
 						echo date("H:i:s");
 					?>
+				</p>
 				<p>
 					<?php
 						echo date("Y-m-d");
