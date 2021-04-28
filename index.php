@@ -46,14 +46,16 @@
 						}
 					?>
 				</p>
+<!--			
 				<p>
 					<?php
-						echo date("H:i:s");
+						//echo date("H:i:s");
 					?>
 				</p>
+-->
 				<p>
 					<?php
-						echo date("Y-m-d");
+						echo date("d-m-Y");
 					?>
 				</p>
 			</div>
