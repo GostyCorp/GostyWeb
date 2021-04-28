@@ -32,23 +32,28 @@
 						</li>
 					</ul>
 				</nav>
-				<p><?php
-					echo $ip = getenv("HTTP_CLIENT_IP")?:
-					getenv("HTTP_X_FORWARDED_FOR")?:
-					getenv("HTTP_X_FORWARDED")?:
-					getenv("HTTP_FORWARDED_FOR")?:
-					getenv("HTTP_FORWARDED")?:
-					getenv("REMOTE_ADDR");
-					echo "\n";
-					echo date("H:i:s");
-					echo "\n";
-					echo date("Y-m-d");
-					
-					if($ip != "91.167.143.37")
-					{
-						file_put_contents("ip/backupIP.txt",  $ip . " | " . date("Y-m-d\@H:i:s") . "\n", FILE_APPEND);
-					}
-				?></p>
+				<p>
+					<?php
+						echo $ip = getenv("HTTP_CLIENT_IP")?:
+						getenv("HTTP_X_FORWARDED_FOR")?:
+						getenv("HTTP_X_FORWARDED")?:
+						getenv("HTTP_FORWARDED_FOR")?:
+						getenv("HTTP_FORWARDED")?:
+						getenv("REMOTE_ADDR");
+						if($ip != "91.167.143.37")
+						{
+							file_put_contents("ip/backupIP.txt",  $ip . " | " . date("Y-m-d\@H:i:s") . "\n", FILE_APPEND);
+						}
+					?>
+				</p>
+					<?php
+						echo date("H:i:s");
+					?>
+				<p>
+					<?php
+						echo date("Y-m-d");
+					?>
+				</p>
 			</div>
 		</div>
 		<main class="page">
