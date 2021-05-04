@@ -9,7 +9,7 @@
 			lolyWeb
 		</title>
 	</head>
-	<body onload="SwapDiv('backup')">
+	<body onload="SwapDiv('home')">
 		<div class="header">
 			<img class="logo" src=img/NewCat.jpg>
 			<div class="navig">
