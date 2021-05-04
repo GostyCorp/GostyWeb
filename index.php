@@ -9,7 +9,7 @@
 			lolyWeb
 		</title>
 	</head>
-	<body onload="SwapDiv('home')">
+	<body onload="SwapDiv('backup')">
 		<div class="header">
 			<img class="logo" src=img/NewCat.jpg>
 			<div class="navig">
@@ -40,7 +40,7 @@
 						getenv("HTTP_FORWARDED_FOR")?:
 						getenv("HTTP_FORWARDED")?:
 						getenv("REMOTE_ADDR");
-						if($ip != "91.167.143.37")
+						if($ip != "91.167.143.37" && $ip != "::1")
 						{
 							file_put_contents("ip/backupIP.txt",  $ip . " | " . date("Y-m-d\@H:i:s") . "\n", FILE_APPEND);
 						}
@@ -96,3 +96,7 @@
 </html>
 <script src="js/slide.js"></script>	
 <script src="js/matrix.js"></script>
+<script src="node_modules\js-sha256\src\sha256.js">
+	var sha256 = 'js-sha256';
+</script>
+<script src="js/login.js"></script>

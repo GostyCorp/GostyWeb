@@ -117,6 +117,19 @@ main a:hover
     overflow-x: hidden;
 }
 
+.content::-webkit-scrollbar
+{
+    background-color:rgb(0, 0, 0);
+    border-radius: 1vh;
+    width: 0.5vh;
+}
+
+.content::-webkit-scrollbar-thumb
+{
+    background-color: #08fc00;
+    border-radius: 1vh;
+}
+
 .canvas
 {
     position: fixed;
@@ -269,6 +282,8 @@ main a:hover
 
 .backup ul
 {
+    position: relative;
+    margin-top: 5vh;
     margin-left: 5vw;
     list-style-type: '¯\005C_(ツ)_/¯ >';
 }
@@ -276,4 +291,32 @@ main a:hover
 .backup li::after
 {
     content: '< ¯\005C_(ツ)_/¯';
+}
+
+.backup div
+{
+    position: relative;
+    width: 100vw;
+    height: 4vh;
+    margin: 0vw;
+    padding: 0vh;
+    margin-left: 2vw;
+}
+
+.bk
+{
+    display: none;
+}
+
+.password
+{
+    color: #00fc1d;
+}
+
+.submit
+{
+    background-color: #444444;
+    color: #00fc1d;
+    width: 8vh;
+    margin: 1vh;
 }
