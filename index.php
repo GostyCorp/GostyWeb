@@ -46,7 +46,7 @@
 						}
 					?>
 				</p>
-<!--			
+<!--	ERROR ?		
 				<p>
 					<?php
 						//echo date("H:i:s");

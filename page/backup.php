@@ -1,3 +1,4 @@
+<!--
 <div class="login">
 	<p>Password : </p>
 	<input class="password" type='password' id='pass' autofocus=true></input>
@@ -17,3 +18,5 @@
 		echo "</ul>";
 	?>
 </div>
+-->
+<div style="margin-left: auto; margin-right: auto; width: max-content;">ERROR 404</div>

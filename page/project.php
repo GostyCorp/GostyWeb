@@ -67,3 +67,22 @@
         </div>
     </div>
 </div>
+<div class="littleproject">
+    <div class="MineMods">
+        <div class="imagert">
+            <img src="img/forge.png">?</img>
+        </div>
+        <div class="textlt">
+            <p class="name">
+                lolyMineMod 1.16.5
+            </p>
+            <p>
+                Server Minecraft Mod 1.16.5
+            </p>
+            <p>
+                Pack Mods : <a href="/media/PackMods/mods V1.0.jar" target="_blank">V1.0</a><br>
+                Créer par Very Old pApY.<br>
+            </p>
+        </div>
+    </div>
+</div>
