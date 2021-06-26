@@ -83,6 +83,45 @@
                 Pack Mods : <a href="PackMods/modsV1.0.rar" target="_blank">V1.0</a><br>
                 Créer par Very Old pApY.<br>
             </p>
+            <p>
+            Core :<br>
+            ✔ - Chameleon<br>
+            ✔ - AbnormalsCore<br>
+            ✔ - Obfuscate<br>
+            ✔ - Citadel<br>
+            ✔ - ShetiphianCore<br>
+            ✔ - CuriousAPI<br>
+            <br>
+            Old Mods :<br>
+            ✔ - Artifact -> Fabric && CuriousAPI<br>
+            ✔ - BetterAnimalsPlus<br>
+            ✔ - Champions<br>
+            ✔ - DoggyTalent<br>
+            ✔ - IceAndFire -> Citadel<br>
+            ✔ - Jei<br>
+            ✔ - LuckyBlock<br>
+            ✔ - ProgressiveBosses<br>
+            ✔ - ProgressiveDifficulty<br>
+            ✔ - Rats -> Citadel<br>
+            ✔ - SpartanShield<br>
+            ✔ - SpartanWeapon<br>
+            ✔ - StorageDrawers -> Chameleon<br>
+            ✔ - Terraqueous -> ShetiphianCore<br>
+            <br>
+            New Mods :<br>
+            ✔ - UndeadArmy<br>
+            ✔ - Mowzie'sMobs<br>
+            ✔ - TwilightForest<br>
+            ✔ - EpicFight<br>
+            ✔ - GuardVillager<br>
+            ✔ - DynamicSurrounding<br>
+            ✔ - TheOuterEnd -> AbnormalsCore<br>
+            ✔ - MoreVillagers -> Fabric<br>
+            ✔ - ToroHealthDamageIndicator -> Fabric<br>
+            ✔ - AntiqueAtlas -> Fabric<br>
+            ✔ - BiomeO'Plenty<br>
+            ✔ - MrCrayFish'sGun -> Obfuscate<br>
+            </p>
         </div>
     </div>
 </div>
