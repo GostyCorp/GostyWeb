@@ -80,7 +80,7 @@
                 Server Minecraft Mod 1.16.5
             </p>
             <p>
-                Pack Mods : <a href="../../media/PackMods/mods V1.0.jar" target="_blank">V1.0</a><br>
+                Pack Mods : <a href="../../../media/PackMods/mods V1.0.jar" target="_blank">V1.0</a><br>
                 Créer par Very Old pApY.<br>
             </p>
         </div>
