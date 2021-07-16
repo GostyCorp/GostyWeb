@@ -1,4 +1,4 @@
-<?php 
+<?php
 	if(!isset($_GET['act']))
 	{
 		$_GET['act'] = 'login';
@@ -11,7 +11,12 @@
 			include("view/v_connection.php");
 			break;
 		}
-		case 'verify':
+		case 'register':
+		{
+			include("view/v_register.php");
+			break;
+		}
+		case 'verifyLogin':
 		{
 			$login = $_REQUEST['login'];
 			$pwd = $_REQUEST['pwd'];
@@ -25,6 +30,30 @@
 			{
 				$_SESSION['login'] = $login;
 				include("view/v_home.php");
+			}
+			break;
+		}
+		case 'verifyRegister':
+		{
+			$login = $_REQUEST['login'];
+			$pwd = $_REQUEST['pwd'];
+			$vfpwd = $_REQUEST['vfpwd'];
+			$email = $_REQUEST['email'];
+			$guest = $bdd->getUsername($login);
+			if($guest == $login)
+			{
+				include("view/v_register.php");
+				echo "<h3>Username already exist</h3>";
+			}
+			else if ($pwd != $vfpwd)
+			{
+				include("view/v_register.php");
+				echo "<h3>The password are not equal</h3>";
+			}
+			else
+			{
+				$bdd->insertUsers($login, $pwd, $email);
+				include("view/v_connection.php");
 			}
 			break;
 		}

@@ -52,4 +52,37 @@
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
 		}
+
+		public function getUsername($login)
+		{
+			$req = "SELECT name FROM USERS WHERE name = '$login'";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
+				$result = $prep->fetch();
+				if(!empty($result))
+				{
+					return $result['name'];
+				}
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
+
+		public function insertUsers($login, $pwd, $email)
+		{
+			$req = "INSERT INTO USERS (name,pwd,email) VALUES ('$login', '$pwd', '$email')";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
 	}
