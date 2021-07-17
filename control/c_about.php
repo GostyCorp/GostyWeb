@@ -1,4 +1,5 @@
-<?php 
+<?php
+	include("view/v_summary.php");
 	if(!isset($_GET['act']))
 	{
 		$_GET['act'] = '#';

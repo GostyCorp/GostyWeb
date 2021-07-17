@@ -1,15 +1,19 @@
-<?php 
-	if(!isset($_GET['act']))
+<?php
+	include("view/v_summary.php");
+	if($_SESSION['statut'] == 'Admin' || $_SESSION['statut'] == 'Developer')
 	{
-		$_GET['act'] = '#';
-	}
-	$act = $_GET['act'];
-	switch($act)
-	{
-		default:
+		if(!isset($_GET['act']))
 		{
-			include("view/v_backup.php");
-			break;
+			$_GET['act'] = '#';
+		}
+		$act = $_GET['act'];
+		switch($act)
+		{
+			default:
+			{
+				include("view/v_backup.php");
+				break;
+			}
 		}
 	}
 ?>

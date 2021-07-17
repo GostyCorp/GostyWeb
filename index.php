@@ -1,10 +1,9 @@
 <?php
 	include("view/v_header.php");
-	include("view/v_summary.php");
 	require_once("model/bdd.php");
 	session_start();
 	$bdd = Bdd::getBdd();
-	if (!isset($_GET['req']) || !isset($_SESSION['login']))
+	if (!isset($_GET['req']) || !isset($_SESSION['login']) || !isset($_SESSION['statut']))
 	{
 		$_GET['req'] = 'login';
 	}
