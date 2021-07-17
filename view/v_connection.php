@@ -1,5 +1,5 @@
 <div class="nine columns login">
-    <h5>Login User</h5>
+    <h4>Login User</h4>
 	<form method="POST" action="index.php?req=login&act=verifyLogin">
 		<p>
 			<label>Login : <input type="text" name="login"  size="30" maxlength="45" required></label>

@@ -27,7 +27,20 @@
 			{
 				include("view/v_summary.php");
 				include("view/v_connection.php");
-				echo "<h3>Erreur Login</h3>";
+				echo "<h5>Erreur Login</h5>";
+			}
+			else if ($guest['pwd'] != $pwd)
+			{
+				include("view/v_summary.php");
+				include("view/v_connection.php");
+				echo "<h5>Erreur Password</h5>";
+			}
+			else if ($guest['statut'] == 'Guest')
+			{
+				include("view/v_summary.php");
+				include("view/v_connection.php");
+				echo "<h5>No Permission</h5>";
+				echo "<h5>Contact Admins/Moderators</h5>";
 			}
 			else
 			{
@@ -49,19 +62,19 @@
 			{
 				include("view/v_summary.php");
 				include("view/v_register.php");
-				echo "<h3>Username already exist</h3>";
+				echo "<h5>Username already exist</h5>";
 			}
 			else if ($pwd != $vfpwd)
 			{
 				include("view/v_summary.php");
 				include("view/v_register.php");
-				echo "<h3>The password are not equal</h3>";
+				echo "<h5>The password are not equal</h5>";
 			}
 			else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
 			{
 				include("view/v_summary.php");
 				include("view/v_register.php");
-				echo "<h3>The email are not good</h3>";
+				echo "<h5>The email are not good</h5>";
 			}
 			else
 			{

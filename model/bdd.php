@@ -92,7 +92,7 @@
 
 		public function registerStatus($login)
 		{
-			$req = "INSERT INTO STATUS (userID, statut) VALUES ((SELECT ID FROM USERS WHERE name = '$login'), 'guest')";
+			$req = "INSERT INTO STATUS (userID, statut) VALUES ((SELECT ID FROM USERS WHERE name = '$login'), 'Guest')";
 			try
 			{
 				$prep = BDD::$sql->prepare($req);
