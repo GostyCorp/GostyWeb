@@ -50,6 +50,11 @@
 				include("view/v_register.php");
 				echo "<h3>The password are not equal</h3>";
 			}
+			else if (filter_var($email, FILTER_VALIDATE_EMAIL))
+			{
+				include("view/v_register.php");
+				echo "<h3>The email are not good</h3>";
+			}
 			else
 			{
 				$bdd->insertUsers($login, $pwd, $email);

@@ -7,6 +7,12 @@ body
 	margin-right: 1em;
 }
 
+hr
+{
+	border-top: 0.1em solid rgb(0, 255, 60);
+	width: 6em;
+}
+
 .container
 {
 	display: flex;

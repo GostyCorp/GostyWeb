@@ -11,7 +11,7 @@
 			<label>Password : <input type="password"  name="pwd" size="30" maxlength="45" required></label>
 		</p>
         <p>
-			<label>Verify Password : <input type="password"  name="vfpwd" size="30" maxlength="45" required></label>
+			<label>Verify : <input type="password"  name="vfpwd" size="30" maxlength="45" required></label>
 		</p>
 		<input type="submit" value=">Register">
         <a class="button" href="index.php?req=login&act=login">>Login</a>
