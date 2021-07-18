@@ -1,5 +1,5 @@
 <?php
-	include("view/v_summary.php");
+	include("control/c_summary.php");
 	if($_SESSION['statut'] == 'Admin' || $_SESSION['statut'] == 'Developer')
 	{
 		if(!isset($_GET['act']))

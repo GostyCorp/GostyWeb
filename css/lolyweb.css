@@ -69,7 +69,12 @@ hr
 	border-radius: 1em;
 }
 
-.row.header > .nine.columns > h1
+.row.header > .nine.columns > a
+{
+	text-decoration: none;
+}
+
+.row.header > .nine.columns > a > h1
 {
 	color: rgb(0, 255, 60);
 	padding-top: 0.6em;

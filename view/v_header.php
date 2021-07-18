@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>
@@ -16,7 +17,7 @@
 					<img class="logo" src="img/NewCat.jpg">
 				</div>
 				<div class="nine columns">
-					<h1>ĽøĺýĆòřᵱ</h1>
+					<a href="https://loly.ovh/"><h1>ĽøĺýĆòřᵱ</h1></a>
 				</div>
 			</div>
 			<div class="row center">
