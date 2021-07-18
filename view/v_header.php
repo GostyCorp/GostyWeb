@@ -17,7 +17,7 @@
 					<img class="logo" src="img/NewCat.jpg">
 				</div>
 				<div class="nine columns">
-					<a href="https://loly.ovh/"><h1>ĽøĺýĆòřᵱ</h1></a>
+					<a href="Home"><h1>ĽøĺýĆòřᵱ</h1></a>
 				</div>
 			</div>
 			<div class="row center">
