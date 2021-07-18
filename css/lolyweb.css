@@ -172,6 +172,8 @@ h5
 	border: 0.1em solid rgb(0, 255, 60);
 	border-radius: 1em;
 	height: 5em;
+	text-align: center;
+	font-size: 0.8em;
 }
 
 /*---------------------Responsive---------------------*/

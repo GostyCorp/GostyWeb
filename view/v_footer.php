@@ -1,7 +1,8 @@
             </div>
             <div class="row footer">
+                Information : Aucune données autre que ceux transmit lors de votre inscription n'est sauvegarder.
                 <br>
-                @Copyright ĽøĺýĆòřᵱ<br>
+                @Copyright ĽøĺýĆòřᵱ
                 <br>
             </div>
         </div>
