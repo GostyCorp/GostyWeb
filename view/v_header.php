@@ -14,7 +14,9 @@
 		<div class="container">
 			<div class="row header">
 				<div class="three columns">
-					<img class="logo" src="img/NewCat.jpg">
+					<?php
+						echo $logo;
+					?>
 				</div>
 				<div class="nine columns">
 					<a href="Home"><h1>ĽøĺýĆòřᵱ</h1></a>

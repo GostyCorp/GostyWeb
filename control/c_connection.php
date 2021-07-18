@@ -8,14 +8,12 @@
 	{
 		case 'login':
 		{
-			session_unset();
 			include("control/c_summary.php");
 			include("view/v_connection.php");
 			break;
 		}
 		case 'register':
 		{
-			session_unset();
 			include("control/c_summary.php");
 			include("view/v_register.php");
 			break;
@@ -84,6 +82,11 @@
 				header('Location: Login');
 			}
 			break;
+		}
+		case 'logOff':
+		{
+			session_unset();
+			header('Location: Login');
 		}
 		default :
 		{

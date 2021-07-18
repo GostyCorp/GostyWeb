@@ -3,7 +3,7 @@
 	<a class="button" href="About">>À propos</a>
 	<a class="button" href="Project">>Projet</a>
 	<a class="button" href="Save">>Backup</a>
-	<a class="button" href="Login">>Déconnexion</a>
+	<a class="button" href="logOff">>Déconnexion</a>
 	<hr>
 	<a class="button" href="https://willow.loly.ovh">>WillowBook</a>
 </div>

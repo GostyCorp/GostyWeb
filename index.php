@@ -1,13 +1,15 @@
 <?php
-	include("view/v_header.php");
 	require_once("model/bdd.php");
 	session_start();
 	$bdd = Bdd::getBdd();
 	if (!isset($_GET['req']) || !isset($_SESSION['login']) || !isset($_SESSION['statut']))
 	{
 		$_GET['req'] = 'login';
+		$_SESSION['login'] = null;
+		$_SESSION['statut'] = null;
 	}
 	$req = $_GET['req'];
+	include("control/c_header.php");
 	switch($req)
 	{
 		case 'login':

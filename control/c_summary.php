@@ -1,26 +1,17 @@
 <?php
-	if(isset($_SESSION['statut']) && isset($_SESSION['login']))
-	{
-		$statut = $_SESSION['statut'];
-	}
-	else
-	{
-		$statut = null;
-	}
-
-	if ($statut == 'Guest')
+	if ($_SESSION['statut'] == 'Guest')
 	{
 		include("view/v_summaryGuest.php");
 	}
-	else if ($statut == 'User')
+	else if ($_SESSION['statut'] == 'User')
 	{
 		include("view/v_summaryUser.php");
 	}
-	else if ($statut == 'Dev' )
+	else if ($_SESSION['statut'] == 'Dev' )
 	{
 		include("view/v_summaryAdmin.php");
 	}
-	else if ($statut == 'Admin' )
+	else if ($_SESSION['statut'] == 'Admin' )
 	{
 		include("view/v_summaryAdmin.php");
 	}
