@@ -103,6 +103,13 @@ hr
 	overflow-y: auto;
 }
 
+
+.row.center > .nine.columns > table > thead > tr > th
+{
+	font-size: 0.7em;
+	text-align: center;
+}
+
 .row.center > .nine.columns.login
 {
 	display: flex;
@@ -154,6 +161,27 @@ hr
 .row.center > .nine.columns.project > p
 {
 	font-size: 0.8em;
+}
+
+.row.center > .nine.columns.admin
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.row.center > .nine.columns > table > tbody > tr > td
+{
+	font-size: 0.6em;
+	text-align: center;
+}
+
+.row.center > .nine.columns.admin > form > input
+{
+	color: rgb(0, 255, 60);
+	border-color: rgb(0, 255, 60);
+	border-radius: 0.2em;
 }
 
 h5

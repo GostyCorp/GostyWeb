@@ -5,11 +5,13 @@ RewriteRule ^About$ index.php?req=about
 RewriteRule ^Project$ index.php?req=project
 RewriteRule ^Save$ index.php?req=backup
 
-RewriteRule ^Login$ index.php?req=login&act=login
-RewriteRule ^logOff$ index.php?req=login&act=logOff
+RewriteRule ^Admin$ index.php?req=admin&act=guests
+RewriteRule ^verifyGuests$ index.php?req=admin&act=verifyGuests
 
+RewriteRule ^Login$ index.php?req=login&act=login
 RewriteRule ^verifyLogin$ index.php?req=login&act=verifyLogin
 RewriteRule ^Register$ index.php?req=login&act=register
 RewriteRule ^verifyRegister$ index.php?req=login&act=verifyRegister
+RewriteRule ^logOff$ index.php?req=login&act=logOff
 
 ErrorDocument 404 https://loly.ovh/Login

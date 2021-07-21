@@ -7,6 +7,7 @@
 		$_GET['req'] = 'login';
 		$_SESSION['login'] = null;
 		$_SESSION['statut'] = null;
+		$_SESSION['vip'] = null;
 	}
 	$req = $_GET['req'];
 	include("control/c_header.php");
@@ -35,6 +36,11 @@
 		case 'backup':
 		{
 			include("control/c_backup.php");
+			break;
+		}
+		case 'admin':
+		{
+			include("control/c_admin.php");
 			break;
 		}
 	}

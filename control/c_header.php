@@ -1,5 +1,5 @@
 <?php
-    if($_SESSION['statut'] == 'VIP')
+    if($_SESSION['vip'] == '1')
     {
         $logo = '<img style="border: 0.1em solid rgb(255, 200, 0);" class="logo" src="img/NewCatVIP.jpg">';
     }

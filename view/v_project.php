@@ -1,18 +1,4 @@
 <div class="nine columns project">
-	<img src="img/laptop.png"></img>
-	<h4>
-		lolyWeb
-	</h4>
-	<p>
-		lolyWeb est un site web personnel pour partager mes créations, mes tests, et me servant de portfolio.
-	</p>
-	<p>
-		Code Source : <a href="https://github.com/pApY-Dalix/lolyWeb" target="_blank">Github</a><br>
-		Développé par Very Old pApY.<br>
-		Code : HTML - CSS - PHP - JS.
-	</p>
-	<hr>
-
 	<img src="img/game.jpg"></img>
 	<h4>
 		Morpion PPE
@@ -61,43 +47,85 @@
 		Pack Mods : <a href="PackMods/modsV1.0.rar" target="_blank">V1.0</a><br>
 		Créer par Very Old pApY.<br>
 	</p>
-	<p>
-	Core :<br>
-	✔ - Chameleon<br>
-	✔ - AbnormalsCore<br>
-	✔ - Obfuscate<br>
-	✔ - Citadel<br>
-	✔ - ShetiphianCore<br>
-	✔ - CuriousAPI<br>
-	<br>
-	Old Mods :<br>
-	✔ - Artifact -> Fabric && CuriousAPI<br>
-	✔ - BetterAnimalsPlus<br>
-	✔ - Champions<br>
-	✔ - DoggyTalent<br>
-	✔ - IceAndFire -> Citadel<br>
-	✔ - Jei<br>
-	✔ - LuckyBlock<br>
-	✔ - ProgressiveBosses<br>
-	✔ - ProgressiveDifficulty<br>
-	✔ - Rats -> Citadel<br>
-	✔ - SpartanShield<br>
-	✔ - SpartanWeapon<br>
-	✔ - StorageDrawers -> Chameleon<br>
-	✔ - Terraqueous -> ShetiphianCore<br>
-	<br>
-	New Mods :<br>
-	✔ - UndeadArmy<br>
-	✔ - Mowzie'sMobs<br>
-	✔ - TwilightForest<br>
-	✔ - EpicFight<br>
-	✔ - GuardVillager<br>
-	✔ - DynamicSurrounding<br>
-	✔ - TheOuterEnd -> AbnormalsCore<br>
-	✔ - MoreVillagers -> Fabric<br>
-	✔ - ToroHealthDamageIndicator -> Fabric<br>
-	✔ - AntiqueAtlas -> Fabric<br>
-	✔ - BiomeO'Plenty<br>
-	✔ - MrCrayFish'sGun -> Obfuscate<br>
-	</p>
+	<table class="u-full-width">
+		<thead>
+			<tr>
+				<th>Core :</th>
+				<th>Old Mods :</th>
+				<th>New Mods :</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Chameleon</td>
+				<td>Artifact -> CuriousAPI</td>
+				<td>UndeadArmy</td>
+			</tr>
+			<tr>
+				<td>AbnormalsCore</td>
+				<td>BetterAnimalsPlus</td>
+				<td>Mowzie'sMobs</td>
+			</tr>
+			<tr>
+				<td>Obfuscate</td>
+				<td>Champions</td>
+				<td>TwilightForest</td>
+			</tr>
+			<tr>
+				<td>Citadel</td>
+				<td>DoggyTalent</td>
+				<td>EpicFight</td>
+			</tr>
+			<tr>
+				<td>ShetiphianCore</td>
+				<td>IceAndFire -> Citadel</td>
+				<td>GuardVillager</td>
+			</tr>
+			<tr>
+				<td>CuriousAPI</td>
+				<td>Jei</td>
+				<td>DynamicSurrounding</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>LuckyBlock</td>
+				<td>TheOuterEnd -> AbnormalsCore</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>ProgressiveBosses</td>
+				<td>MoreVillagers</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>ProgressiveDifficulty</td>
+				<td>ToroHealthDamageIndicator</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Rats -> Citadel</td>
+				<td>AntiqueAtlas</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>SpartanShield</td>
+				<td>BiomeO'Plenty</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>SpartanWeapon</td>
+				<td>MrCrayFish'sGun -> Obfuscate</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>StorageDrawers -> Chameleon</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Terraqueous -> ShetiphianCore</td>
+				<td></td>
+			</tr>	
+		</tbody>
+	</table>
 </div>

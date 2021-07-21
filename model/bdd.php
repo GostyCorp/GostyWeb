@@ -36,7 +36,7 @@
 
 		public function getUsers($login, $pwd)
 		{
-			$req = "SELECT name, pwd, statut 
+			$req = "SELECT name, pwd, statut, vip
 						FROM USERS U INNER JOIN STATUS S ON U.ID = S.userID 
 						WHERE name = '$login' AND pwd = '$pwd'";
 			try
@@ -92,11 +92,42 @@
 
 		public function registerStatus($login)
 		{
-			$req = "INSERT INTO STATUS (userID, statut) VALUES ((SELECT ID FROM USERS WHERE name = '$login'), 'Guest')";
+			$req = "INSERT INTO STATUS (userID, statut, vip) VALUES ((SELECT ID FROM USERS WHERE name = '$login'), 'Guest', '0')";
 			try
 			{
 				$prep = BDD::$sql->prepare($req);
 				$prep->execute();
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
+
+		public function getGuests()
+		{
+			$req = "SELECT U.ID, U.name, S.statut, S.vip FROM USERS U INNER JOIN STATUS S ON U.ID = S.ID";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
+				$result = $prep->fetchAll();
+				return $result;
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
+
+		public function alterGuest($id, $role)
+		{
+			$req = "UPDATE STATUS SET statut = '$role' WHERE userID = '$id'";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
+				echo 'ok';
 			}
 			catch (Exception $e)
 			{

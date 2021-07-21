@@ -3,6 +3,10 @@
 	{
 		$_GET['act'] = 'login';
 	}
+	if(isset($_SESSION['login']) && isset($_SESSION['statut']))
+	{
+		header('Location: Home');
+	}
 	$act = $_GET['act'];
 	switch($act)
 	{
@@ -46,6 +50,7 @@
 			{
 				$_SESSION['login'] = $guest['name'];
 				$_SESSION['statut'] = $guest['statut'];
+				$_SESSION['vip'] = $guest['vip'];
 				header('Location: Home');
 			}
 			break;
