@@ -4,24 +4,36 @@
 	{
 		if(!isset($_GET['act']))
 		{
-			$_GET['act'] = 'guests';
+			$_GET['act'] = 'admin';
 		}
 		$act = $_GET['act'];
-        $guests = $bdd->getGuests();
+        $users = $bdd->getUsers();
 		switch($act)
 		{
-            case 'guests':
+            case 'admin':
             {
                 include("view/v_admin.php");
 				break;
             }
-            case 'verifyGuests':
+            case 'changeStatus':
             {
-                foreach($guests as $guest)
+                foreach($users as $user)
                 {
-                    if(isset($_POST[$guest['name']]) && $_POST[$guest['name']] == "checked")
+                    if(isset($_POST[$user['name']]) && $_POST[$user['name']] == "checked")
                     {
-                        $bdd->alterGuest($guest['ID'], $_POST['role']);
+                        if($_POST['role'] != "")
+						{
+
+							$bdd->alterStatut($user['ID'], $_POST['role']);
+						}
+						if($_POST['vip'] == "VIP")
+						{
+							$bdd->alterVIP($user['ID'], 1);
+						}
+						else if($_POST['vip'] == "NoVIP")
+						{
+							$bdd->alterVIP($user['ID'], 0);
+						}
                     }
                 }
                 header('Location: Admin');

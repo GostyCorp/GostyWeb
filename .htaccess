@@ -5,8 +5,8 @@ RewriteRule ^About$ index.php?req=about
 RewriteRule ^Project$ index.php?req=project
 RewriteRule ^Save$ index.php?req=backup
 
-RewriteRule ^Admin$ index.php?req=admin&act=guests
-RewriteRule ^verifyGuests$ index.php?req=admin&act=verifyGuests
+RewriteRule ^Admin$ index.php?req=admin&act=admin
+RewriteRule ^changeStatus$ index.php?req=admin&act=changeStatus
 
 RewriteRule ^Login$ index.php?req=login&act=login
 RewriteRule ^verifyLogin$ index.php?req=login&act=verifyLogin

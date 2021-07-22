@@ -26,7 +26,7 @@
 		{
 			$login = $_REQUEST['login'];
 			$pwd = $_REQUEST['pwd'];
-			$guest = $bdd->getUsers($login, $pwd);
+			$guest = $bdd->getUser($login, $pwd);
 			if(!isset($guest) || $guest['name'] != $login)
 			{
 				include("control/c_summary.php");
@@ -82,8 +82,8 @@
 			}
 			else
 			{
-				$bdd->registerUsers($login, $pwd, $email);
-				$bdd->registerStatus($login);
+				$bdd->registerUser($login, $pwd, $email);
+				$bdd->registerStatut($login);
 				header('Location: Login');
 			}
 			break;
