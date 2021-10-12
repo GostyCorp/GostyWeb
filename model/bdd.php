@@ -5,7 +5,7 @@
 		private static $sqlBdd = null;
 		private static $server='sqlsrv:server = loly.ovh';
 		private static $bdd='Database = lolyData';
-		private static $user='lolySite' ;
+		private static $user='lolyData' ;
 		private static $pwd='lc@dyo08';
 
 		private function __construct()
@@ -106,7 +106,7 @@
 
 		public function getUsers()
 		{
-			$req = "SELECT U.ID, U.name, S.statut, S.vip FROM USERS U INNER JOIN STATUS S ON U.ID = S.ID";
+			$req = "SELECT U.ID, U.name, S.statut, S.vip FROM USERS U INNER JOIN STATUS S ON U.ID = S.userID";
 			try
 			{
 				$prep = BDD::$sql->prepare($req);

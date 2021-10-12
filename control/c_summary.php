@@ -26,6 +26,9 @@
 	}
 	else
 	{
+		echo '<a class="button" href="logOff">>Connexion</a>';
+		echo '<a class="button" href="About">>À propos</a>';
+		echo '<a class="button" href="Project">>Projet</a>';
 		echo '<a class="button" href="https://willow.loly.ovh" target="_blank">>WillowBook</a>';
 	}
 	echo '</div>';

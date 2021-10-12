@@ -1,18 +1,4 @@
 <div class="nine columns project">
-	<img src="img/game.jpg"></img>
-	<h4>
-		Morpion PPE
-	</h4>
-	<p>
-		Un simple application du jeu morpion, avec deux modes : joueur VS joueur et joueur VS IA.
-	</p>
-	<p>
-		Code Source : <a href="https://github.com/pApY-Dalix/Morpion" target="_blank">Github</a><br>
-		Développé par Very Old pApY.<br>
-		Code : C#
-	</p>
-	<hr>
-	
 	<img src="img/Terra.png"></img>
 	<h4>
 		Terrafunder
@@ -34,19 +20,48 @@
 		Développé par Very Old pApY et Wongt8.<br>
 		Code : JAVA.
 	</p>
-	<hr>	
-
-	<img src="img/forge.png"></img>
+	<hr>
+	<br>
+	<img src="img/willow.png"></img>
 	<h4>
-		lolyMineMod 1.16.5
+		WillowBook
 	</h4>
 	<p>
-		Server Minecraft Mod 1.16.5
+		SiteWeb, créer pour une personne pour afficher ces créations artistiques, mis à jour et hébergé par ĽøĺýĆòřᵱ.
 	</p>
 	<p>
-		Pack Mods : <a href="PackMods/modsV1.0.rar" target="_blank">V1.0</a><br>
+		Lien : <a href="willow.loly.ovh">WillowBook</a><br>
+		Développé par Very Old pApY.<br>
+		Code : HTML, CSS, JS, PHP. Template : <a href="http://freehtml5.co/">freehtml5</a>
+	</p>
+	<hr>
+	<br>
+	<img src="img/game.jpg"></img>
+	<h4>
+		Morpion PPE
+	</h4>
+	<p>
+		Un simple application du jeu morpion, avec deux modes : joueur VS joueur et joueur VS IA.
+	</p>
+	<p>
+		Développé par Very Old pApY.<br>
+		Code : C#
+	</p>
+	<hr>
+	<br>
+	<img src="img/forge.png"></img>
+	<h4>
+		lolyMine 1.16.5
+	</h4>
+	<p>
+		ModPack Minecraft 1.16.5
+	</p>
+	<p>
+		Pack Mods :<br>
+		V1.0 : <a href="PackMods/V1.0.zip" target="_blank">Download</a><br>
 		Créer par Very Old pApY.<br>
 	</p>
+	<!--
 	<table class="u-full-width">
 		<thead>
 			<tr>
@@ -128,4 +143,5 @@
 			</tr>	
 		</tbody>
 	</table>
+	-->
 </div>

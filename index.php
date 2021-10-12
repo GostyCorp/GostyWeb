@@ -2,7 +2,7 @@
 	require_once("model/bdd.php");
 	session_start();
 	$bdd = Bdd::getBdd();
-	if (!isset($_GET['req']) || !isset($_SESSION['login']) || !isset($_SESSION['statut']))
+	if ((!isset($_GET['req']) || !isset($_SESSION['login']) || !isset($_SESSION['statut'])) && $_GET['req'] != 'project' &&  $_GET['req'] != 'about')
 	{
 		$_GET['req'] = 'login';
 		$_SESSION['login'] = null;
