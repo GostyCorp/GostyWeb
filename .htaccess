@@ -1,17 +1,32 @@
 RewriteEngine on
 
+#NA
+RewriteRule ^$ index.php?req=home
+
+#Basic
 RewriteRule ^Home$ index.php?req=home
 RewriteRule ^About$ index.php?req=about
 RewriteRule ^Project$ index.php?req=project
+RewriteRule ^Tchat$ index.php?req=tchat
 RewriteRule ^Save$ index.php?req=backup
 
+#Tchat
+RewriteRule ^newSend$ index.php?req=tchat&act=newSend
+
+#Admin
 RewriteRule ^Admin$ index.php?req=admin&act=admin
 RewriteRule ^changeStatus$ index.php?req=admin&act=changeStatus
 
+#Connect
 RewriteRule ^Login$ index.php?req=login&act=login
 RewriteRule ^verifyLogin$ index.php?req=login&act=verifyLogin
+
+#Register
 RewriteRule ^Register$ index.php?req=login&act=register
 RewriteRule ^verifyRegister$ index.php?req=login&act=verifyRegister
+
+#LogOut
 RewriteRule ^logOff$ index.php?req=login&act=logOff
 
-ErrorDocument 404 https://loly.ovh/Login
+#Error
+ErrorDocument 404 https://loly.ovh/Home

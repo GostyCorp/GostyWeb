@@ -1,16 +1,19 @@
 <?php
-	require_once("model/bdd.php");
+	date_default_timezone_set('Europe/Paris');
+	require_once "model/bdd.php";
 	session_start();
 	$bdd = Bdd::getBdd();
-	if ((!isset($_GET['req']) || !isset($_SESSION['login']) || !isset($_SESSION['statut'])) && $_GET['req'] != 'project' &&  $_GET['req'] != 'about')
+	if ((!isset($_GET['req']) || !isset($_SESSION['id'])) && $_GET['req'] != 'project' &&  $_GET['req'] != 'about')
 	{
 		$_GET['req'] = 'login';
-		$_SESSION['login'] = null;
+		$_SESSION['id'] = null;
+		$_SESSION['login'] = "Guest";
 		$_SESSION['statut'] = null;
 		$_SESSION['vip'] = null;
 	}
+	$_COOKIE['toto'] = "fuck";
 	$req = $_GET['req'];
-	include("control/c_header.php");
+	require_once "control/c_header.php";
 	switch($req)
 	{
 		case 'login':
@@ -26,6 +29,11 @@
 		case 'about':
 		{
 			include("control/c_about.php");
+			break;
+		}
+		case 'tchat':
+		{
+			include("control/c_tchat.php");
 			break;
 		}
 		case 'project':
@@ -44,5 +52,5 @@
 			break;
 		}
 	}
-	include("view/v_footer.php");
+	require_once "view/v_footer.php";
 ?>

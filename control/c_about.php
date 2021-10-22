@@ -1,5 +1,5 @@
 <?php
-	include("control/c_summary.php");
+	include_once("control/c_summary.php");
 	if(!isset($_GET['act']))
 	{
 		$_GET['act'] = '#';

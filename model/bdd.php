@@ -36,7 +36,7 @@
 
 		public function getUser($login, $pwd)
 		{
-			$req = "SELECT name, pwd, statut, vip
+			$req = "SELECT U.ID, U.name, U.pwd, S.statut, S.vip
 						FROM USERS U INNER JOIN STATUS S ON U.ID = S.userID 
 						WHERE name = '$login' AND pwd = '$pwd'";
 			try
@@ -87,7 +87,6 @@
 			{
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
-			
 		}
 
 		public function registerStatut($login)
@@ -113,6 +112,36 @@
 				$prep->execute();
 				$result = $prep->fetchAll();
 				return $result;
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
+
+		public function getMessages()
+		{
+			$req = "SELECT U.ID, name, message, date FROM USERS U INNER JOIN TCHAT T ON U.ID = T.userID ORDER BY T.ID DESC";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
+				$result = $prep->fetchAll();
+				return $result;
+			}
+			catch (Exception $e)
+			{
+				echo ('Error connection : '), $e->getMessage(), "\n";
+			}
+		}
+
+		public function newMessage($id, $message, $date)
+		{
+			$req = "INSERT INTO TCHAT (userID, message, date) VALUES ($id, '$message', '$date')";
+			try
+			{
+				$prep = BDD::$sql->prepare($req);
+				$prep->execute();
 			}
 			catch (Exception $e)
 			{

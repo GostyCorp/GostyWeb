@@ -1,10 +1,10 @@
             </div>
             <div class="row footer">
-                >Information : Aucune données autre que ceux transmit lors de votre inscription n'est sauvegarder.
+                >RGPD : Aucune données autre que ceux transmit lors de votre inscription n'est sauvegarder.
                 <br>
                 >@Copyright ĽøĺýĆòřᵱ
                 <br>
-                >Version 2.1.1
+                >Version 3.0
             </div>
         </div>
     </body>

@@ -3,7 +3,7 @@
         <table class="u-full-width">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>✅</th>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Status</th>
@@ -15,7 +15,7 @@
                     foreach($users as $user)
                     {
                         echo '<tr>';
-                            echo '<td><input type="checkbox" name='.$user["name"].' value=checked></td>';
+                            echo '<td><input placeholder="check" type="checkbox" name='.$user["name"].' value=checked></td>';
                             echo '<td>'.$user['ID'].'</td>';
                             echo '<td>'.$user['name'].'</td>';
                             echo '<td>'.$user['statut'].'</td>';
@@ -31,7 +31,7 @@
             </tbody>
         </table>
         <br>
-        <select name="role">
+        <select name="role" title="Rôle">
             <libelle>Rôle</libelle>
             <option value=""></option>
             <option value="Guest">Guest</option>
@@ -39,7 +39,7 @@
             <option value="Dev">Dev</option>
             <option value="Admin">Admin</option>
         </select>
-        <select name="vip">
+        <select name="vip" title="VIP">
             <libelle>VIP</libelle>
             <option value=""></option>
             <option value="VIP">VIP</option>

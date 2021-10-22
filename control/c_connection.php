@@ -8,46 +8,41 @@
 		header('Location: Home');
 	}
 	$act = $_GET['act'];
+	include_once("control/c_summary.php");
 	switch($act)
 	{
 		case 'login':
 		{
-			include("control/c_summary.php");
 			include("view/v_connection.php");
 			break;
 		}
 		case 'register':
 		{
-			include("control/c_summary.php");
 			include("view/v_register.php");
 			break;
 		}
 		case 'verifyLogin':
 		{
+			include_once("view/v_connection.php");
 			$login = $_REQUEST['login'];
-			$pwd = $_REQUEST['pwd'];
+			$pwd = hash("sha256", $_REQUEST['pwd']);
 			$guest = $bdd->getUser($login, $pwd);
 			if(!isset($guest) || $guest['name'] != $login)
 			{
-				include("control/c_summary.php");
-				include("view/v_connection.php");
 				echo "<h5>Erreur Login</h5>";
 			}
 			else if ($guest['pwd'] != $pwd)
 			{
-				include("control/c_summary.php");
-				include("view/v_connection.php");
 				echo "<h5>Erreur Password</h5>";
 			}
 			else if ($guest['statut'] == 'Guest')
 			{
-				include("control/c_summary.php");
-				include("view/v_connection.php");
 				echo "<h5>No Permission</h5>";
 				echo "<h5>Contact Admins/Moderators</h5>";
 			}
 			else
 			{
+				$_SESSION['id'] = $guest['ID'];
 				$_SESSION['login'] = $guest['name'];
 				$_SESSION['statut'] = $guest['statut'];
 				$_SESSION['vip'] = $guest['vip'];
@@ -57,6 +52,7 @@
 		}
 		case 'verifyRegister':
 		{
+			include_once("view/v_register.php");
 			$login = $_REQUEST['login'];
 			$pwd = $_REQUEST['pwd'];
 			$vfpwd = $_REQUEST['vfpwd'];
@@ -64,24 +60,19 @@
 			$guest = $bdd->getUsername($login);
 			if($guest == $login)
 			{
-				include("control/c_summary.php");
-				include("view/v_register.php");
 				echo "<h5>Username already exist</h5>";
 			}
 			else if ($pwd != $vfpwd)
 			{
-				include("control/c_summary.php");
-				include("view/v_register.php");
 				echo "<h5>The password are not equal</h5>";
 			}
 			else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
 			{
-				include("control/c_summary.php");
-				include("view/v_register.php");
 				echo "<h5>The email are not good</h5>";
 			}
 			else
 			{
+				$pwd = hash("sha256", $_REQUEST['pwd']);
 				$bdd->registerUser($login, $pwd, $email);
 				$bdd->registerStatut($login);
 				header('Location: Login');

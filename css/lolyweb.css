@@ -2,36 +2,39 @@ body
 {
 	font-family: Consolas;
 	font-size: 2em;
-	background-color: rgb(0, 0, 0);
-	color: rgb(0, 255, 60);
+	line-height: 1em;
+	background-color: rgba(70, 70, 70);
+	color: rgb(255, 255, 255);
 	margin-right: 1em;
 }
 
 ::-webkit-scrollbar
 {
 	width: 0.3em;
+	height: 0.3em;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background: rgb(0, 255, 60);
-	border-radius: 1em;
+	background: rgb(100, 100, 100);
+	border-radius: 1em;	
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-	background: rgb(0, 122, 30);
+	background: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar-track
 {
-	background: rgb(0, 61, 15);
+	background: rgb(50, 50, 50);
 }
 
 hr
 {
-	border-top: 0.1em solid rgb(0, 255, 60);
-	width: 6em;
+	border-top: 0.2em solid rgb(80, 80, 80);
+	border-radius: 1em;
+	width: 12em;
 }
 
 .container
@@ -58,13 +61,17 @@ hr
 {
 	border-radius: 1em;
 	height: 7em;
+	border: 0.2em solid rgb(40, 40, 40);
 }
 
 .row.header > .nine.columns
 {
 	display: flex;
+	align-items: center;
+    flex-direction: column;
 	justify-content: center;
-	border: 0.1em solid rgb(0, 255, 60);
+	background-color: rgb(50, 50, 50);
+	border: 0.2em solid rgb(40, 40, 40);
 	border-radius: 1em;
 }
 .row.header > .nine.columns > a
@@ -74,40 +81,38 @@ hr
 
 .row.header > .nine.columns > a > h1
 {
-	color: rgb(0, 255, 60);
+	color: rgb(255, 255, 255);
 	padding-top: 0.6em;
 }
 
 .row.center > .three.columns
 {
-	padding: 1em;
+	padding-top: 1em;
 	display: flex;
 	flex-direction: column;
+	align-items: stretch;
+	flex-wrap: wrap;
 }
 
 .row.center > .three.columns > a
 {
-	color: rgb(0, 255, 60);
-	border: 0.1em solid rgb(0, 255, 60);
+	color: rgb(255, 255, 255);
+	background-color: rgb(50, 50, 50);
+	border: 0.3em solid rgb(40, 40, 40);
 	border-radius: 0.2em;
+	height: auto;
 }
 
 .row.center > .nine.columns
 {
 	margin-top: 1em;
-	border: 0.1em solid rgb(0, 255, 60);
+	background-color: rgb(50, 50, 50);
+	border: 0.2em solid rgb(40, 40, 40);
 	border-radius: 0.2em;
 	max-height: 35em;
 	min-height: 35em;
 	padding: 1em;
 	overflow-y: auto;
-}
-
-
-.row.center > .nine.columns > table > thead > tr > th
-{
-	font-size: 0.7em;
-	text-align: center;
 }
 
 .row.center > .nine.columns.login
@@ -118,17 +123,25 @@ hr
 	text-align: center;
 }
 
+.row.center > .nine.columns.login > form > p > label > input
+{
+	background-color: rgb(45, 45, 45);
+	border: 0.2em solid rgb(40, 40, 40);
+}
+
 .row.center > .nine.columns.login > form > a
 {
-	color: rgb(0, 255, 60);
-	border-color: rgb(0, 255, 60);
+	color: rgb(255, 255, 255);
+	background-color: rgb(45, 45, 45);
+	border: 0.3em solid rgb(40, 40, 40);
 	border-radius: 0.2em;
 }
 
 .row.center > .nine.columns.login > form > input
 {
-	color: rgb(0, 255, 60);
-	border-color: rgb(0, 255, 60);
+	background-color: rgb(45, 45, 45);
+	color: rgb(255, 255, 255);
+	border: 0.3em solid rgb(40, 40, 40);
 	border-radius: 0.2em;
 }
 
@@ -138,6 +151,7 @@ hr
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	line-height: 1.5em;
 }
 
 .row.center > .nine.columns.project
@@ -163,29 +177,149 @@ hr
 	font-size: 0.8em;
 }
 
+.row.center > .nine.columns.tchat
+{
+	display: flex;
+	font-size: 0.9em;
+}
+
+/*
+.row.center > .nine.columns.tchat > .three.columns.group
+{
+	border: 0.1em solid rgb(0, 255, 60);
+}
+*/
+
+.row.center > .nine.columns.tchat > .nine.columns.text
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: 0.2em solid rgb(40, 40, 40);
+	border-radius: 1em;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesUp
+{
+	display: block;
+	height: 13%;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesUp > .sending
+{
+	display: flex;
+    align-items: center;
+	padding: 0.5em;
+	width: -webkit-fill-available;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesUp > .sending > .area
+{
+	position: relative;
+	margin: 0.1em;
+	left: 0em;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(45, 45, 45);
+	border: 0.2em solid rgb(40, 40, 40);
+	border-radius: 0.5em;
+	resize: none;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesUp> .sending > .send
+{
+	height: auto;
+	position: relative;
+	margin: 0em;
+	right: 0em;
+	font-size: 0.7em;
+	color: rgb(255, 255, 255);
+	background-color: rgb(45, 45, 45);
+	border: 0.3em solid rgb(40, 40, 40);
+	border-radius: 1em;
+	margin-left: 0.5em;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesDown
+{
+	display: block;
+	height: 100%;
+	overflow: auto;
+	width: fit-content;
+	flex-direction: column;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesDown > div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesDown > .right
+{
+	align-items: flex-end
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesDown > .left > div
+{
+	background-color: rgb(45, 45, 45);
+	border: 0.2em solid rgb(40, 40, 40);
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 1em;
+	border-top-left-radius: 0em;
+}
+
+.row.center > .nine.columns.tchat > .nine.columns.text > .messagesDown > .right > div
+{
+	background-color: rgb(45, 45, 45);
+	border: 0.2em solid rgb(40, 40, 40);
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 1em;
+	border-top-right-radius: 0em;
+}
+
 .row.center > .nine.columns.admin
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	align-items: center;
 }
 
-.row.center > .nine.columns > table > tbody > tr > td
+.row.center > .nine.columns.admin > form
 {
-	font-size: 0.6em;
+	width: 80%;
+}
+
+.row.center > .nine.columns > form > table > thead > tr > th
+{
+	font-size: 1em;
+	text-align: center;
+}
+
+.row.center > .nine.columns > form > table > tbody > tr > td
+{
+	font-size: 1em;
 	text-align: center;
 }
 
 .row.center > .nine.columns.admin > form > input
 {
-	color: rgb(0, 255, 60);
-	border-color: rgb(0, 255, 60);
+	height: auto;
+	color: rgb(255, 255, 255);
+	border: 0.3em solid rgb(40, 40, 40);
 	border-radius: 0.2em;
 }
 
 .row.center > .nine.columns.admin > form > select
 {
+	height: auto;
+	background-color: rgb(50, 50, 50);
+	border: 0.2em solid rgb(40, 40, 40);
 	width: 8em;
 }
 
@@ -197,14 +331,16 @@ h5
 
 .row.footer
 {
+	background-color: rgb(50, 50, 50);
 	display: flex;
 	justify-content: center;
 	margin-top: 1em;
-	border: 0.1em solid rgb(0, 255, 60);
+	border: 0.3em solid rgb(40, 40, 40);
 	border-radius: 1em;
-	height: 5em;
+	height: fit-content;
 	text-align: center;
 	font-size: 0.8em;
+	line-height: 1.5em;
 }
 
 /*---------------------Responsive---------------------*/

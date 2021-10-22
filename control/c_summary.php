@@ -4,6 +4,7 @@
 	{
 		echo '<a class="button" href="Home">>Home</a>';
 		echo '<a class="button" href="About">>À propos</a>';
+		echo '<a class="button" href="Tchat">>Tchat</a>';
 		echo '<a class="button" href="Project">>Projet</a>';
 		echo '<a class="button" href="logOff">>Déconnexion</a>';
 	}
@@ -11,6 +12,7 @@
 	{
 		echo '<a class="button" href="Home">>Home</a>';
 		echo '<a class="button" href="About">>À propos</a>';
+		echo '<a class="button" href="Tchat">>Tchat</a>';
 		echo '<a class="button" href="Project">>Projet</a>';
 		echo '<a class="button" href="Save">>Backup</a>';
 		echo '<a class="button" href="logOff">>Déconnexion</a>';
@@ -19,6 +21,7 @@
 	{
 		echo '<a class="button" href="Home">>Home</a>';
 		echo '<a class="button" href="About">>À propos</a>';
+		echo '<a class="button" href="Tchat">>Tchat</a>';
 		echo '<a class="button" href="Project">>Projet</a>';
 		echo '<a class="button" href="Save">>Backup</a>';
 		echo '<a class="button" href="Admin">>Admin</a>';

@@ -1,0 +1,18 @@
+<div class="nine columns tchat">
+	<div class="three columns group">
+        
+    </div>
+    <div class="nine columns text">
+        <div class="messagesUp">
+            <form class="sending" method="POST" action="newSend">
+                <textarea placeholder=">Messages..." maxlength="500" name=text autofocus class="area" required></textarea>
+                <input type="submit" value="Send" name="send" class="send"></input>
+            </form>
+        </div>
+        <div class="messagesDown">
+            <script>
+                setInterval('loadMessage()', 500);
+            </script>
+        </div>
+    </div>
+</div>

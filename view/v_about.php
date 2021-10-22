@@ -4,9 +4,11 @@
 		<br>
 		=>^w^<=
 		<br>
-		je suis développeur de <100 ans.
 		<br>
-		>Ce site sert d'affiche et d'informations à des projets pour ma team LolyCorp.
+		Je suis un développeur de ≤100 ans.
+		<br>
+		<br>
+		>Ce site est utilisé comme affiche et information pour les projets de mon équipe ĽøĺýĆòřᵱ.
 		<br>
 		>Je vous souhaite la bienvenue :>
 	</p>
