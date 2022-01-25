@@ -58,7 +58,7 @@
 	</p>
 	<p>
 		Pack Mods :<br>
-		V1.0 : <a href="PackMods/V1.0.zip" target="_blank">Download</a><br>
+		V1.0 : <a href="minecraft/pack_1.0.zip" target="_blank">Download</a><br>
 		Créer par Very Old pApY.<br>
 	</p>
 </div>

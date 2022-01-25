@@ -11,7 +11,6 @@
 		$_SESSION['statut'] = null;
 		$_SESSION['vip'] = null;
 	}
-	$_COOKIE['toto'] = "fuck";
 	$req = $_GET['req'];
 	require_once "control/c_header.php";
 	switch($req)

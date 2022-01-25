@@ -1,12 +1,13 @@
 <?php
+	include_once('key.php');
 	class BDD
 	{
 		private static $sql;
 		private static $sqlBdd = null;
-		private static $server='sqlsrv:server = loly.ovh';
-		private static $bdd='Database = lolyData';
-		private static $user='lolyData' ;
-		private static $pwd='lc@dyo08';
+		private static $server = 'sqlsrv:server = ' . $serverkey;
+		private static $bdd = 'Database = ' . $bddkey;
+		private static $user = $userkey;
+		private static $pwd= $pwdkey;
 
 		private function __construct()
 		{
