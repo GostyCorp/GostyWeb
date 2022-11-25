@@ -8,4 +8,3 @@
         $logo = '<img style="border: 0.2em solid rgb(40, 40, 40);" class="logo" src="img/NewCat.jpg">';
     }*/
     include('view/v_header.php');
-?>

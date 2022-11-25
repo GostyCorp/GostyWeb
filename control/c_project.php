@@ -9,8 +9,7 @@
 	{
 		default:
 		{
-			include("view/v_project.php");
+			include("view/v_project.html");
 			break;
 		}
 	}
-?>

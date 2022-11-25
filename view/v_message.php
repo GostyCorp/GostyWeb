@@ -9,14 +9,13 @@
             if($message['ID'] == $_REQUEST['id'])
             {
                 echo "<div class='right'>";
-                echo "<div>";
-            }
+			}
             else
             {
                 echo "<div class='left'>";
-                echo "<div>";
-            }
-                echo $message['name'], " - ", date('D d H:i:s', strtotime($message['date']));
+			}
+			echo "<div>";
+			echo $message['name'], " - ", date('D d H:i:s', strtotime($message['date']));
                 //echo "<hr>";
                 echo "<div>";
                     echo $message['message'];
@@ -25,4 +24,3 @@
             echo "</div>";
         }
     }
-?>

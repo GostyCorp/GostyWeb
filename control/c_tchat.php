@@ -17,8 +17,7 @@
 		}
 		default:
 		{
-			include("view/v_tchat.php");
+			include("view/v_tchat.html");
 			break;
 		}
 	}
-?>

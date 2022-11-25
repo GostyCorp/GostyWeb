@@ -9,7 +9,7 @@
 	{
 		default:
 		{
-			include("view/v_about.php");
+			include("view/v_about.html");
 			break;
 		}
 	}

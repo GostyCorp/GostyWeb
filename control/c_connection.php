@@ -13,17 +13,17 @@
 	{
 		case 'login':
 		{
-			include("view/v_connection.php");
+			include("view/v_connection.html");
 			break;
 		}
 		case 'register':
 		{
-			include("view/v_register.php");
+			include("view/v_register.html");
 			break;
 		}
 		case 'verifyLogin':
 		{
-			include_once("view/v_connection.php");
+			include_once("view/v_connection.html");
 			$login = $_REQUEST['login'];
 			$pwd = hash("sha256", $_REQUEST['pwd']);
 			$guest = $bdd->getUser($login, $pwd);
@@ -52,7 +52,7 @@
 		}
 		case 'verifyRegister':
 		{
-			include_once("view/v_register.php");
+			include_once("view/v_register.html");
 			$login = $_REQUEST['login'];
 			$pwd = $_REQUEST['pwd'];
 			$vfpwd = $_REQUEST['vfpwd'];
@@ -90,4 +90,3 @@
 			break;
 		}
 	}
-?>

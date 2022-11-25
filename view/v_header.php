@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<title>
 			lolyWeb
@@ -16,13 +16,12 @@
 		<meta name="robots" content="index, follow">
 
 		<!-- CSS -->
-		<link rel="icon" href="img/NewCat.jpg">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
-		<link rel="stylesheet" href="css/lolyweb.css">
-
-		<Cache-Control: no-store>
+		<link rel="icon" href="../img/NewCat.jpg">
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/skeleton.css">
+		<link rel="stylesheet" href="../css/lolyweb.css">
 	</head>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         function loadMessage()
@@ -30,11 +29,12 @@
             $('.messagesDown').load('view/v_message.php', 'id='+ <?php echo $_SESSION['id']?>);
         }
     </script>
+
 	<body>
 		<div class="container">
 			<div class="row header">
 				<div class="three columns">
-					<img class="logo" src="img/NewCat.jpg" title="logo">
+					<img class="logo" src="../img/NewCat.jpg" title="logo" alt="newcat">
 				</div>
 				<div class="nine columns">
 					<a href="Home"><h1 name='ok'>ĽøĺýĆòřᵱ</h1></a>

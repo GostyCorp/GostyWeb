@@ -35,4 +35,3 @@
 		echo '<a class="button" href="https://willow.loly.ovh" target="_blank">>WillowBook</a>';
 	}
 	echo '</div>';
-?>

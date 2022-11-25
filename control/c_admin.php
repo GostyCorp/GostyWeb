@@ -10,12 +10,7 @@
         $users = $bdd->getUsers();
 		switch($act)
 		{
-            case 'admin':
-            {
-                include("view/v_admin.php");
-				break;
-            }
-            case 'changeStatus':
+			case 'changeStatus':
             {
                 foreach($users as $user)
                 {

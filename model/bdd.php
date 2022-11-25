@@ -1,19 +1,19 @@
 <?php
-	include_once('key.php');
+	include_once 'info.php';
 	class BDD
 	{
-		private static $sql;
+		private static $sql = null;
 		private static $sqlBdd = null;
-		private static $server = 'sqlsrv:server = ' . $serverkey;
-		private static $bdd = 'Database = ' . $bddkey;
-		private static $user = $userkey;
-		private static $pwd= $pwdkey;
 
 		private function __construct()
 		{
+			$server = "sqlsrv:server = " . info()[0];
+			$bdd = "Database = " . info()[1];
+			$user = info()[2];
+			$pwd = info()[3];
 			try
 			{
-				BDD::$sql = new PDO(BDD::$server.';'.BDD::$bdd, BDD::$user, BDD::$pwd);
+				BDD::$sql = new PDO($server.';'. $bdd, $user, $pwd);
 			}
 			catch (Exception $e)
 			{
@@ -54,6 +54,7 @@
 			{
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
+			return null;
 		}
 
 		public function getUsername($login)
@@ -73,6 +74,7 @@
 			{
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
+			return null;
 		}
 
 		public function registerUser($login, $pwd, $email)
@@ -111,13 +113,13 @@
 			{
 				$prep = BDD::$sql->prepare($req);
 				$prep->execute();
-				$result = $prep->fetchAll();
-				return $result;
+				return $prep->fetchAll();
 			}
 			catch (Exception $e)
 			{
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
+			return null;
 		}
 
 		public function getMessages()
@@ -127,18 +129,18 @@
 			{
 				$prep = BDD::$sql->prepare($req);
 				$prep->execute();
-				$result = $prep->fetchAll();
-				return $result;
+				return $prep->fetchAll();
 			}
 			catch (Exception $e)
 			{
 				echo ('Error connection : '), $e->getMessage(), "\n";
 			}
+			return null;
 		}
 
 		public function newMessage($id, $message, $date)
 		{
-			$req = "INSERT INTO TCHAT (userID, message, date) VALUES ($id, '$message', '$date')";
+			$req = "INSERT INTO TCHAT (userID, message, date) VALUES ($id, N'$message', '$date')";
 			try
 			{
 				$prep = BDD::$sql->prepare($req);
@@ -157,7 +159,6 @@
 			{
 				$prep = BDD::$sql->prepare($req);
 				$prep->execute();
-				echo 'ok';
 			}
 			catch (Exception $e)
 			{
@@ -172,7 +173,6 @@
 			{
 				$prep = BDD::$sql->prepare($req);
 				$prep->execute();
-				echo 'ok';
 			}
 			catch (Exception $e)
 			{

@@ -51,5 +51,5 @@
 			break;
 		}
 	}
-	require_once "view/v_footer.php";
+	require_once "view/v_footer.html";
 ?>

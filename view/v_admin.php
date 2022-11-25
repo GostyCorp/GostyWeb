@@ -32,7 +32,7 @@
         </table>
         <br>
         <select name="role" title="Rôle">
-            <libelle>Rôle</libelle>
+            <label>Rôle</label>
             <option value=""></option>
             <option value="Guest">Guest</option>
             <option value="User">User</option>
@@ -40,7 +40,7 @@
             <option value="Admin">Admin</option>
         </select>
         <select name="vip" title="VIP">
-            <libelle>VIP</libelle>
+            <label>VIP</label>
             <option value=""></option>
             <option value="VIP">VIP</option>
             <option value="NoVIP">NoVIP</option>
