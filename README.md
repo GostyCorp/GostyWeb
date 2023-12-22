@@ -1,6 +1,6 @@
-# lolyWeb
-WebSite lolyCorp
+# gostyWeb
+WebSite gostyWeb
 
-Personnal Website
+organisation Website
 
 ![present.png](img/present.png)
